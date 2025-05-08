@@ -16,4 +16,9 @@ public class Cuffie extends Prodotto {
     public String getSuono(){
         return this.suono;
     }
+// concatenamento della stringa per il comando in main
+    public String AccendiCuffie () {
+        return "Le cuffie " + Nome + " della " + Marca + " sono di colore " + getColore() + " e hanno la funzione " + getSuono() +
+        "Le cuffie hanno un costo di " + getPrezzoIvaFormattato() + "e il loro codice barcode è " + Codice;
+    }
 }

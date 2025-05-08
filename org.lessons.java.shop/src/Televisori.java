@@ -28,4 +28,8 @@ public class Televisori extends Prodotto {
     public String getSmartDescription() {
         return Smart ? "è una smart TV" : "non è una smart TV";
     }
+  // concatenamento della stringa per il comando in main
+    public String accendiTv () {
+        return "La Tv "+ Nome + " della " + Marca + " ha un prezzo di " + getPrezzoIvaFormattato() + "La  Tv " + Nome + " ha la dimensione di " + getDimensioni() + " pollici ed è una televisione  " + getSmartDescription();
+    }
 }

@@ -18,4 +18,9 @@ public class Smartphone extends Prodotto {
     public int getMemoria() {
         return this.Memoria;
     }
+    // concatenamento della stringa per il comando in main
+    public String accendismart () {
+        return "Lo smartphone " + Nome + " della " + Marca + " Ha un costo di " + getPrezzoIvaFormattato() + " e il suo codice barcode è " + Codice + "Numero Imei dello smartphone " + Nome +" è " + getImei() + " con capacita di memoria " + getMemoria() + "gb";
+       
+    }
 }
