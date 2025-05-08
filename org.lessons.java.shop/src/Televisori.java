@@ -3,7 +3,7 @@ public class Televisori extends Prodotto {
     private boolean Smart;
     // // richiamo al costruttore prodotto e inizio costruttore Televisori
 
-    public Televisori(String Nome, String Marca, int Codice, double prezzo, double iva, int Dimensioni, Boolean smart) {
+    public Televisori(String Nome, String Marca, int Codice, float prezzo, float iva, int Dimensioni, Boolean smart) {
         super(Nome, Marca, Codice, prezzo, iva);
         this.Dimensioni = Dimensioni;
         this.Smart = smart;
@@ -30,6 +30,6 @@ public class Televisori extends Prodotto {
     }
   // concatenamento della stringa per il comando in main
     public String accendiTv () {
-        return "La Tv "+ Nome + " della " + Marca + " ha un prezzo di " + getPrezzoIvaFormattato() + "La  Tv " + Nome + " ha la dimensione di " + getDimensioni() + " pollici ed è una televisione  " + getSmartDescription();
+        return "La Tv "+ Nome + " della " + Marca + "con codice barcode che è " + Codice + " ha un prezzo di " + getPrezzoIvaFormattato() + " La Tv " + Nome + " ha la dimensione di " + getDimensioni() + " pollici ed " + getSmartDescription();
     }
 }

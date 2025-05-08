@@ -4,7 +4,7 @@ public class Smartphone extends Prodotto {
 
     // richiamo al costruttore prodotto e inizio costruttore Smartphone
 
-    public Smartphone(String Nome, String Marca, int Codice, double prezzo, double Iva, String Imei, int Memoria) {
+    public Smartphone(String Nome, String Marca, int Codice, float prezzo, float Iva, String Imei, int Memoria) {
         super(Nome, Marca, Codice, prezzo, Iva);
         this.Imei = Imei;
         this.Memoria = Memoria;
@@ -20,7 +20,7 @@ public class Smartphone extends Prodotto {
     }
     // concatenamento della stringa per il comando in main
     public String accendismart () {
-        return "Lo smartphone " + Nome + " della " + Marca + " Ha un costo di " + getPrezzoIvaFormattato() + " e il suo codice barcode è " + Codice + "Numero Imei dello smartphone " + Nome +" è " + getImei() + " con capacita di memoria " + getMemoria() + "gb";
+        return "Lo smartphone " + Nome + " della " + Marca + " Ha un costo di " + getPrezzoIvaFormattato() + " e il suo codice barcode è " + Codice + " Numero Imei dello smartphone " + Nome +" è " + getImei() + " con capacita di memoria " + getMemoria() + "gb";
        
     }
 }

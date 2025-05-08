@@ -5,11 +5,11 @@ public class Prodotto {
    public String Nome;
    public String Marca;
    public int Codice;
-   public double prezzo;
-   public double iva;
+   public float prezzo;
+   public float iva;
 
    // creazione del costruttore
-   public Prodotto(String Nome, String Marca, int Codice, double prezzo, double iva) {
+   public Prodotto(String Nome, String Marca, int Codice, float prezzo, float iva) {
       this.Nome = Nome;
       this.Marca = Marca;
       Random rand = new Random();
@@ -20,15 +20,15 @@ public class Prodotto {
 
    // Inserimento metodo prezzo base
    public String getPrezzoFormattato() {
-      return String.format("%.2f ", prezzo);
+      String PrezzoFormattato=String.format("%.2f ", prezzo);
+      return PrezzoFormattato + " ";
    }
 
    // Inserimento metodo iva
    public String getPrezzoIvaFormattato() {
-      double prezzoIvato = prezzo + (prezzo * iva / 100.0);
-      return String.format("%.2f ", prezzoIvato);
+      float prezzoIvato = prezzo + (prezzo * iva / 100.0f);
+      return String.format("%.2f", prezzoIvato);
    }
-
    // inserimento stringa codice prodotto piu nome del Prodotto
    public String venduta() {
       return this.Codice + "-" + this.Nome;
