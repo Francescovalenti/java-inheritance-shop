@@ -5,7 +5,7 @@ public class Main {
         Cuffie Auricolari = new Cuffie("AirPods","Apple",0,199.99,22,"Bianco","wireless");
 
         System.out.println("Numero imei dello smartphone " + smart.Nome +" è " + smart.getImei() + " con capacita di memoria " + smart.getMemoria() + "gb" );
-        System.out.println("la " + Tv.Nome + " ha la dimensione di " + Tv.getDimensioni() + " pollici ed è una televisione con funzione " + Tv.isSmart());
+        System.out.println("la " + Tv.Nome + " ha la dimensione di " + Tv.getDimensioni() + " pollici ed è una televisione con funzione " + Tv.getSmartDescription());
         System.out.println("Le cuffie " + Auricolari.Nome + " della " + Auricolari.Marca + " sono di colore " + Auricolari.getColore() + " e hanno la funzione " + Auricolari.getSuono());
 
     }
