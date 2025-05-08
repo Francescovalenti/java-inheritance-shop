@@ -3,29 +3,29 @@ import java.util.Random;
 // inserimento attributi
 public class Prodotto {
    public String Nome;
-   public String Descrizione;
+   public String Marca;
    public int Codice;
-   public double Prezzo;
+   public double prezzo;
    public double iva;
 
    // creazione del costruttore
-   public Prodotto(String Nome, String Descrizione, int Codice, double prezzo, double iva) {
+   public Prodotto(String Nome, String Marca, int Codice, double prezzo, double iva) {
       this.Nome = Nome;
-      this.Descrizione = Descrizione;
+      this.Marca = Marca;
       Random rand = new Random();
       this.Codice = rand.nextInt(90000) ;
-      this.Prezzo = prezzo;
+      this.prezzo = prezzo;
       this.iva = iva;
    }
 
    // Inserimento metodo prezzo base
    public String getPrezzoFormattato() {
-      return String.format("%.2f ", Prezzo);
+      return String.format("%.2f ", prezzo);
    }
 
    // Inserimento metodo iva
    public String getPrezzoIvaFormattato() {
-      double prezzoIvato = Prezzo + (Prezzo * iva / 100.0);
+      double prezzoIvato = prezzo + (prezzo * iva / 100.0);
       return String.format("%.2f ", prezzoIvato);
    }
 
@@ -34,8 +34,8 @@ public class Prodotto {
       return this.Codice + "-" + this.Nome;
    }
 
-   // inserimento metodo per la descrizione
-   public String getDescrizione() {
-      return Descrizione;
+   // inserimento metodo per la marca
+   public String getMarca() {
+      return Marca;
    }
 }
