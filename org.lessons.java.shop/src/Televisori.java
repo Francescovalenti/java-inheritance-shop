@@ -7,5 +7,11 @@ public class Televisori extends Prodotto {
     this.Dimensioni=Dimensioni;
     this.smart=smart;
    }
-    
+ public int getDimensioni(){
+    return this.Dimensioni;
+ }   
+
+ public boolean isSmart () {
+    return this.smart;
+ }
 }
