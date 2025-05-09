@@ -18,8 +18,8 @@ public class Cuffie extends Prodotto {
     }
 // concatenamento della stringa per il comando in main
     public String AccendiCuffie () {
-        return "Le cuffie " + Nome + " della " + Marca + " sono di colore " + getColore() + " e hanno la funzione " + getSuono() +
-        "Le cuffie hanno un costo di " + getPrezzoIvaFormattato() + " e il loro codice barcode è " + Codice;
+        return "Le cuffie " + getNome() + " della " + getMarca() + " sono di colore " + getColore() + " e hanno la funzione " + getSuono() +
+        "Le cuffie hanno un costo di " + getPrezzoIvaFormattato() + " e il suo codice barcode è " + getCodice();
     }
 }
 

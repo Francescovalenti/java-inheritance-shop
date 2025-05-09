@@ -31,8 +31,8 @@ public class Televisori extends Prodotto {
 
     // concatenamento della stringa per il comando in main
     public String accendiTv() {
-        return "La Tv " + Nome + " della " + Marca + "con codice barcode che è " + Codice + " ha un prezzo di "
-                + getPrezzoIvaFormattato() + " La Tv " + Nome + " ha la dimensione di " + getDimensioni()
+        return "La Tv " + getNome()+ " della " + getMarca() + " con codice barcode che è " + getCodice() + " ha un prezzo di "
+                + getPrezzoIvaFormattato() + " La Tv " + getNome() + " ha la dimensione di " + getDimensioni()
                 + " pollici ed " + getSmartDescription();
     }
 }
