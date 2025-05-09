@@ -2,11 +2,11 @@ import java.util.Random;
 
 // inserimento attributi
 public class Prodotto {
-   public String Nome;
-   public String Marca;
-   public int Codice;
+   private String Nome;
+   private String Marca;
+   private int Codice;
    private float prezzo;
-   public float iva;
+   private float iva;
 
    // creazione del costruttore
    public Prodotto(String Nome, String Marca, int Codice, float prezzo, float iva) {
