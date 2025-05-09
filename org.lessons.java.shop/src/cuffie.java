@@ -1,6 +1,6 @@
 public class Cuffie extends Prodotto {
-    private String Colore;
-    private String suono;
+    protected String Colore;
+    protected String suono;
  // richiamo al costruttore prodotto e inizio costruttore Cuffie
 
     public Cuffie(String Nome, String Marca, int Codice, float prezzo, float iva,String Colore,String suono) {

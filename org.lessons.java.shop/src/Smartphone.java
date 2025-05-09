@@ -1,6 +1,6 @@
 public class Smartphone extends Prodotto {
-    private String Imei;
-    private int Memoria;
+    protected String Imei;
+    protected int Memoria;
 
     // richiamo al costruttore prodotto e inizio costruttore Smartphone
 
@@ -11,16 +11,19 @@ public class Smartphone extends Prodotto {
     }
 
     // fase di richiamo nel main di Imei e Memoria
-   public String getImei() {
+    public String getImei() {
         return this.Imei;
     }
 
     public int getMemoria() {
         return this.Memoria;
     }
+
     // concatenamento della stringa per il comando in main
-    public String accendismart () {
-        return "Lo smartphone " + Nome + " della " + Marca + " Ha un costo di " + getPrezzoIvaFormattato() + " e il suo codice barcode è " + Codice + " Numero Imei dello smartphone " + Nome +" è " + getImei() + " con capacita di memoria " + getMemoria() + "gb";
-       
+    public String accendismart() {
+        return "Lo smartphone " + Nome + " della " + Marca + " Ha un costo di " + getPrezzoIvaFormattato()
+                + " e il suo codice barcode è " + Codice + " Numero Imei dello smartphone " + Nome + " è " + getImei()
+                + " con capacita di memoria " + getMemoria() + "gb";
+
     }
 }
