@@ -5,7 +5,7 @@ public class Prodotto {
    public String Nome;
    public String Marca;
    public int Codice;
-   public float prezzo;
+   private float prezzo;
    public float iva;
 
    // creazione del costruttore
