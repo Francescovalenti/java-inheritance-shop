@@ -20,10 +20,7 @@ public class Televisori extends Prodotto {
         return this.Smart;
     }
 
-    public void setSmart(boolean smart) {
-        this.Smart = smart;
 
-    }
 
     public String getSmartDescription() {
         return Smart ? "è una smart TV" : "non è una smart TV";
