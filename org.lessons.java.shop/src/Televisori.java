@@ -6,7 +6,7 @@ public class Televisori extends Prodotto {
     public Televisori(String Nome, String Marca, int Codice, float prezzo, float iva, int Dimensioni, Boolean smart) {
         super(Nome, Marca, Codice, prezzo, iva);
         this.Dimensioni = Dimensioni;
-        this.Smart = smart;
+        this.Smart = true;
     }
 
     // fase di richiamo nel main della dimensione
@@ -20,10 +20,10 @@ public class Televisori extends Prodotto {
         return this.Smart;
     }
 
-    public void setSmart(boolean smart) {
-        this.Smart = smart;
+    // public void setSmart(boolean smart) {
+    //     this.Smart = smart;
 
-    }
+    // }
 
     public String getSmartDescription() {
         return Smart ? "è una smart TV" : "non è una smart TV";

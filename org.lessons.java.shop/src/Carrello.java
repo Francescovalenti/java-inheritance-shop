@@ -38,14 +38,14 @@ public class Carrello {
             } else {
                 System.out.println("Tipologia non riconosciuta. Salto questo prodotto o ritorna indietro.");
             }
-
-        }
-        System.out.println("\n--- CONTENUTO DEL CARRELLO ---");
+               System.out.println("\n--- CONTENUTO DEL CARRELLO ---");
         for (Prodotto Finale : Carrello) {
             if (Finale != null)
                 System.out.println(Finale);
         }
 
+        }
+      
         scanner.close();
     }
 }
