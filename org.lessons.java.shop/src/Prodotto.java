@@ -17,7 +17,6 @@ public class Prodotto {
       this.iva = iva;
    }
 
-
    // Inserimento metodo prezzo base
    public String getPrezzoFormattato() {
       String PrezzoFormattato = String.format("%.2f ", prezzo);
@@ -35,16 +34,22 @@ public class Prodotto {
       return this.Codice + "-" + this.Nome;
    }
 
-   // inserimento metodo per marca e nome e codice 
+   // inserimento metodo per marca e nome e codice
    public String getMarca() {
       return Marca;
    }
+
    public String getNome() {
       return Nome;
    }
 
    public int getCodice() {
       Random rand = new Random();
-      return this.Codice=rand.nextInt(90000);
+      return this.Codice = rand.nextInt(90000);
    }
+
+   public float getIva() {
+      return iva;
+   }
+
 }

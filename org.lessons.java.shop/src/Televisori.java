@@ -35,4 +35,10 @@ public class Televisori extends Prodotto {
                 + getPrezzoIvaFormattato() + " La Tv " + getNome() + " ha la dimensione di " + getDimensioni()
                 + " pollici ed " + getSmartDescription();
     }
+       @Override
+     public String toString() {
+         return "La Tv " + getNome()+ " della " + getMarca() + " con codice barcode che è " + getCodice() + " che  ha una dimensione di " + getDimensioni()
+                + " pollici ed " + getSmartDescription() + "con l'iva dell" + getIva() +  " ha un prezzo di "
+                + getPrezzoIvaFormattato() ;
+}
 }

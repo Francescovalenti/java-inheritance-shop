@@ -19,11 +19,19 @@ public class Smartphone extends Prodotto {
         return this.Memoria;
     }
 
+  
     // concatenamento della stringa per il comando in main
     public String accendismart() {
-        return "Lo smartphone " + getNome() + " della " + getMarca()+ " Ha un costo di " + getPrezzoIvaFormattato()
+        return "Lo smartphone " + getNome() + " della " + getMarca() + " Ha un costo di " + getPrezzoIvaFormattato()
                 + " e il suo codice barcode è " + getCodice() + " Numero Imei dello smartphone " + getNome() + " è " + getImei()
                 + " con capacita di memoria " + getMemoria() + "gb";
 
     }
+
+    @Override
+     public String toString() {
+         return "Il tuo Smartphone"+ getNome() + "della" + getMarca() + " con codice barcode: "+ getCodice() + " Numero Imei dello smartphone " + getNome() + " è " + getImei()
+                 + " con capacita di memoria " + getMemoria() + "gb" + "con l'iva dell'" + getIva() + "ha un prezzo di:" + getPrezzoIvaFormattato();
+     }
+  
 }

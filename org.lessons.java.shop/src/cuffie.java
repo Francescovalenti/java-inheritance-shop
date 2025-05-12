@@ -1,9 +1,9 @@
 public class Cuffie extends Prodotto {
     protected String Colore;
     protected String suono;
- // richiamo al costruttore prodotto e inizio costruttore Cuffie
+    // richiamo al costruttore prodotto e inizio costruttore Cuffie
 
-    public Cuffie(String Nome, String Marca, int Codice, float prezzo, float iva,String Colore,String suono) {
+    public Cuffie(String Nome, String Marca, int Codice, float prezzo, float iva, String Colore, String suono) {
         super(Nome, Marca, Codice, prezzo, iva);
         this.Colore = Colore;
         this.suono = suono;
@@ -13,14 +13,20 @@ public class Cuffie extends Prodotto {
     public String getColore() {
         return this.Colore;
     }
-    public String getSuono(){
+
+    public String getSuono() {
         return this.suono;
     }
-// concatenamento della stringa per il comando in main
-    public String AccendiCuffie () {
-        return "Le cuffie " + getNome() + " della " + getMarca() + " sono di colore " + getColore() + " e hanno la funzione " + getSuono() +
-        "Le cuffie hanno un costo di " + getPrezzoIvaFormattato() + " e il suo codice barcode è " + getCodice();
+
+    // concatenamento della stringa per il comando in main
+    public String AccendiCuffie() {
+        return "Le cuffie " + getNome() + " della " + getMarca() + " sono di colore " + getColore()
+                + " e hanno la funzione " + getSuono() +
+                "Le cuffie hanno un costo di " + getPrezzoIvaFormattato() + " e il suo codice barcode è " + getCodice();
+    }
+
+    @Override
+    public String toString() {
+        return  "Le cuffie " + getNome() + " della " + getMarca() + " sono di colore " + getColore() + " e hanno la funzione " + getSuono() + " e il suo codice barcode è " + getCodice() + "e con l'iva dell'" + getIva() + "e hanno un prezzo di: "+ getPrezzoIvaFormattato();
     }
 }
-
-
