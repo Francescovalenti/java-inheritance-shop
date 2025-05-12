@@ -27,7 +27,7 @@ public class Smartphone extends Prodotto {
                 + " con capacita di memoria " + getMemoria() + "gb";
 
     }
-
+// inserimento del override per la stampa nella classe carrello
     @Override
      public String toString() {
          return "Il tuo Smartphone"+ getNome() + "della" + getMarca() + " con codice barcode: "+ getCodice() + " Numero Imei dello smartphone " + getNome() + " è " + getImei()

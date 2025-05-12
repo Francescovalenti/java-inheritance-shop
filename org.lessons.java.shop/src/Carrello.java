@@ -4,11 +4,13 @@ import java.util.Scanner;
 public class Carrello {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+       // inserimento del array per la scelta dei prodotti gia prestabiliti
         Prodotto[] Carrello = new Prodotto[3];
         for (int i = 0; i < Carrello.length; i++) {
+            // inserimento della prima domanda
             System.out.println("Inserisci la tipologia del prodotto acquistato:");
             String TipoProdotto = scanner.nextLine().trim();
-
+            // inserimento dei vari prodotti e delle loro scelte.
             if (TipoProdotto.equalsIgnoreCase("Smartphone")) {
                 System.out.println("Nome:");
                 String Nome = scanner.nextLine().trim();
@@ -34,10 +36,12 @@ public class Carrello {
                 String Marca = scanner.nextLine().trim();
 
                 Carrello[i] = new Cuffie("AirPods", "Apple", 0, 199, 22, "Bianco", "wireless");
-
+                 // inserimento della risposta per possibile errore del cliente
             } else {
                 System.out.println("Tipologia non riconosciuta. Salto questo prodotto o ritorna indietro.");
             }
+
+            // stampa del carrello
                System.out.println("\n--- CONTENUTO DEL CARRELLO ---");
         for (Prodotto Finale : Carrello) {
             if (Finale != null)
