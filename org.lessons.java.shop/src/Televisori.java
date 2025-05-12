@@ -26,21 +26,21 @@ public class Televisori extends Prodotto {
     // }
 
     public String getSmartDescription() {
-        return Smart ? "è una smart TV" : "non è una smart TV";
+        return Smart ? " ed è una smart TV" : "non è una smart TV";
     }
 
     // concatenamento della stringa per il comando in main
     public String accendiTv() {
-        return "La Tv " + getNome()+ " della " + getMarca() + " con codice barcode che è " + getCodice() + " ha un prezzo di "
+        return "La Tv " + getNome()+ " della " + getMarca() + "con codice barcode che è " + getCodice() + " ha un prezzo di "
                 + getPrezzoIvaFormattato() + " La Tv " + getNome() + " ha la dimensione di " + getDimensioni()
                 + " pollici ed " + getSmartDescription();
     }
 
     // inserimento del override per la stampa nella classe carrello
-       @Override
-     public String toString() {
-         return "La Tv " + getNome()+ " della " + getMarca() + " con codice barcode che è " + getCodice() + " che  ha una dimensione di " + getDimensioni()
-                + " pollici ed " + getSmartDescription() + "con l'iva dell" + getIva() +  " ha un prezzo di "
-                + getPrezzoIvaFormattato() ;
+    @Override
+public String toString() {
+    return "TV " + super.toString() +
+           ", dimensioni: " + getDimensioni() + " pollici, " + getSmartDescription();
 }
+
 }

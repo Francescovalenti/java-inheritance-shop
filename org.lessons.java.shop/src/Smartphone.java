@@ -29,9 +29,10 @@ public class Smartphone extends Prodotto {
     }
 // inserimento del override per la stampa nella classe carrello
     @Override
-     public String toString() {
-         return "Il tuo Smartphone"+ getNome() + "della" + getMarca() + " con codice barcode: "+ getCodice() + " Numero Imei dello smartphone " + getNome() + " è " + getImei()
-                 + " con capacita di memoria " + getMemoria() + "gb" + "con l'iva dell'" + getIva() + "ha un prezzo di:" + getPrezzoIvaFormattato();
-     }
+public String toString() {
+    return "Smartphone " + super.toString() +
+           ", IMEI: " + getImei() + ", memoria: " + getMemoria() + "GB";
+}
+
   
 }

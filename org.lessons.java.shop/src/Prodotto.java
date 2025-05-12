@@ -52,4 +52,12 @@ public class Prodotto {
       return iva;
    }
 
+   @Override
+public String toString() {
+    return getNome() + " della " + getMarca() + " con codice barcode: "
+            + getCodice() + 
+           ", la sua IVA è: " + getIva() + "%" +
+           ", e il suo prezzo finale è: " + getPrezzoIvaFormattato();
+}
+
 }

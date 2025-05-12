@@ -24,9 +24,12 @@ public class Cuffie extends Prodotto {
                 + " e hanno la funzione " + getSuono() +
                 "Le cuffie hanno un costo di " + getPrezzoIvaFormattato() + " e il suo codice barcode è " + getCodice();
     }
-// inserimento del override per la stampa nella classe carrello
-    @Override
-    public String toString() {
-        return  "Le cuffie " + getNome() + " della " + getMarca() + " sono di colore " + getColore() + " e hanno la funzione " + getSuono() + " e il suo codice barcode è " + getCodice() + "e con l'iva dell'" + getIva() + "e hanno un prezzo di: "+ getPrezzoIvaFormattato();
-    }
+
+    // inserimento del override per la stampa nella classe carrello
+   @Override
+public String toString() {
+    return "Cuffie " + super.toString() +
+           ", colore: " + getColore() +
+           ", tipo: " + getSuono();
+}
 }
