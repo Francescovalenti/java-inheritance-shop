@@ -40,9 +40,7 @@ public class Carrello {
                 System.out.println("Tipologia non riconosciuta. Salto questo prodotto o ritorna indietro.");
             }
 
-            System.out.println("Confermi la scelta?");
-            String scelta = scanner.nextLine().trim().toLowerCase();
-            boolean isOk = scelta.equals("sì") || scelta.equals("si");
+         
 
   
             System.out.println("\n--- CONTENUTO DEL CARRELLO ---");
@@ -52,7 +50,8 @@ public class Carrello {
             }
         
 
-        scanner.close();
+      
     }
+      scanner.close();
 }
 }
