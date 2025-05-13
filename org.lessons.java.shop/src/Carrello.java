@@ -39,7 +39,8 @@ public class Carrello {
                     System.out.println("Marca:");
                     String Marca = scanner.nextLine().trim();
 
-                    Carrello[i] = new Cuffie("AirPods", "Apple", 0, 199, 22, "Bianco", "wireless");}
+                    Carrello[i] = new Cuffie("AirPods", "Apple", 0, 199, 22, "Bianco", "wireless");
+                break;}
 // inserimento per la risposta sbagliata del cliente
                 default:
                     System.out.println("Tipologia non riconosciuta. Salto questo prodotto o ritorna indietro.");
