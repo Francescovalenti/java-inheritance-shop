@@ -16,7 +16,9 @@ public class Prodotto {
       this.prezzo = prezzo;
       this.iva = iva;
    }
-
+   public static String formattaCodice(int codice) {
+    return String.format("%08d", codice);
+}
    // Inserimento metodo prezzo base
    public String getPrezzoFormattato() {
       String PrezzoFormattato = String.format("%.2f ", prezzo);
